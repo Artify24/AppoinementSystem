@@ -1,0 +1,209 @@
+[
+  {
+    "ContainingType": "Backend.Controllers.Admin.AdminAuthController",
+    "Method": "Login",
+    "RelativePath": "api/AdminAuth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "Backend.DTOs.LoginDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.AppoinmentsController",
+    "Method": "ConcludeAppointment",
+    "RelativePath": "api/Appoinments/ConcludeAppointment/{appointmentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Backend.DTOs.CompleteAppoinmentsDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.AppoinmentsController",
+    "Method": "CreateAppointment",
+    "RelativePath": "api/Appoinments/CreateAppointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointment",
+        "Type": "Backend.DTOs.TakeAppoinmentDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.AppoinmentsController",
+    "Method": "GetAllApoinments",
+    "RelativePath": "api/Appoinments/GetAllApoinments/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.AppoinmentsController",
+    "Method": "GetAppoinmentDetail",
+    "RelativePath": "api/Appoinments/GetAppoinmentDetail/{appoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.AppoinmentsController",
+    "Method": "GetRecentAppointments",
+    "RelativePath": "api/Appoinments/GetRecentAppointments/{drid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "drid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.ClientAuthController",
+    "Method": "Login",
+    "RelativePath": "api/ClientAuth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "Backend.DTOs.ClientLoginDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.ClientAuthController",
+    "Method": "SignUp",
+    "RelativePath": "api/ClientAuth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "Backend.DTOs.ClientSignUpDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.DoctorController",
+    "Method": "GetAllPatinets",
+    "RelativePath": "api/Doctor/GetAllPatinets/{docId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.DoctorController",
+    "Method": "GetDoctors",
+    "RelativePath": "api/Doctor/GetDoctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.PatientController",
+    "Method": "GetPatientAppoinmentsDetails",
+    "RelativePath": "api/Patient/GetPatientDetails/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.PrescriptionsController",
+    "Method": "GetAllPrescriptions",
+    "RelativePath": "api/Prescriptions/GetAllPrescriptions/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.Admin.PrescriptionsController",
+    "Method": "GetAllPrescriptionsDoctors",
+    "RelativePath": "api/Prescriptions/GetAllPrescriptionsDoctors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
