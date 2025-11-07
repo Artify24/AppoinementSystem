@@ -85,12 +85,7 @@ export default function DashboardPage() {
               </h1>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" className="relative">
-                <Bell className="h-5 w-5 text-gray-600" />
-                <Badge className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-red-500 text-white text-xs">
-                  2
-                </Badge>
-              </Button>
+              
               <div className="hidden sm:flex items-center space-x-2 text-gray-700">
                 <User className="h-5 w-5" />
                 <span className="font-medium">{patientData.fullname}</span>
@@ -119,24 +114,7 @@ export default function DashboardPage() {
           <p className="text-gray-600 text-lg">Your health is our priority. Stay informed, stay healthy.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-          {quickStats.map((stat) => {
-            const Icon = stat.icon
-            return (
-              <Card key={stat.label} className="bg-white/60 backdrop-blur-sm border-white/20">
-                <CardContent className="p-4">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-sm text-gray-600 mb-1">{stat.label}</p>
-                      <p className="text-2xl font-bold text-gray-800">{stat.value}</p>
-                    </div>
-                    <Icon className={`h-8 w-8 ${stat.color}`} />
-                  </div>
-                </CardContent>
-              </Card>
-            )
-          })}
-        </div>
+       
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {navigationCards.map((card) => {
