@@ -26,7 +26,7 @@ export default function LoginPage() {
     setError("")
 
     try {
-      const doctor = await api.post("/AdminAuth/login",{Email:email, Passwords:password})
+      const doctor = await api.post("AdminAuth/login",{Email:email, Passwords:password})
 
       console.log("Login successful:", doctor)
       localStorage.setItem("doctor", JSON.stringify(doctor.data));
